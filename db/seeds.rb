@@ -7,3 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Job.create(start_date: DateTime.new(2017,1,2), end_date: DateTime.new(2017,1,4))
+User.create(first_name: 'Greg', last_name: 'Cubrick', email: 'greg.cubrick@example.com')
