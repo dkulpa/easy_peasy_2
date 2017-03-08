@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170308071104) do
+ActiveRecord::Schema.define(version: 20170308071356) do
+
+  create_table "availabilities", force: :cascade do |t|
+    t.integer  "user_id"
+    t.date     "day_off"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_availabilities_on_user_id"
+  end
 
   create_table "profiles", force: :cascade do |t|
     t.integer  "user_id"
