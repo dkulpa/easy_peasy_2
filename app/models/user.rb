@@ -1,4 +1,4 @@
 class User < ApplicationRecord
-  has_many :profiles
-  has_one :availability
+  has_one :profile
+  has_many :availabilities
 end
