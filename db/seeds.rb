@@ -8,3 +8,6 @@
 
 Job.create(start_date: DateTime.new(2017,1,2), end_date: DateTime.new(2017,1,4))
 User.create(first_name: 'Greg', last_name: 'Cubrick', email: 'greg.cubrick@example.com')
+
+unaccepted_profile = Profile.create(phone_number: '873229123')
+User.create(first_name: 'Amy', last_name: 'Sadstring', email: 'amy.sadstring@example.com', profiles: [unaccepted_profile])
