@@ -11,3 +11,10 @@ User.create(first_name: 'Greg', last_name: 'Cubrick', email: 'greg.cubrick@examp
 
 unaccepted_profile = Profile.create(phone_number: '873229123')
 User.create(first_name: 'Amy', last_name: 'Sadstring', email: 'amy.sadstring@example.com', profiles: [unaccepted_profile])
+
+accepted_profile = Profile.create(phone_number: '726290830', accepted_at: DateTime.new(2017,1,2))
+User.create(first_name: 'Goddie',
+  last_name: 'Poodie',
+  email: 'goodie.poodie@example.com',
+  profiles: [accepted_profile],
+  availability: Availability.create)
