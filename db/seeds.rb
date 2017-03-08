@@ -31,3 +31,13 @@ User.create(first_name: 'John',
     Availability.create(day_off: DateTime.new(2017, 1, 5))
   ]
 )
+
+User.create(first_name: 'Mara',
+  last_name: 'Splitkova',
+  email: 'mara.splitkova@example.com',
+  profile: accepted_profile,
+  availabilities: [
+    Availability.create(day_off: DateTime.new(2017, 1, 2)),
+    Availability.create(day_off: DateTime.new(2017, 1, 10))
+  ]
+)
